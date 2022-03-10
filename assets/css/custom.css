@@ -131,5 +131,77 @@ body {
     visibility: visible;
 }
 
+@media (max-width: 991px) {
+    .main-content {
+        padding-left: 40px;
+    }
+}
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.main-content {
+    background: #182137;
+}
+
+@media (max-width: 991px) {
+    .main-content .hanging {
+        width: 40px;
+    }
+}
+
+.main-content .hanging {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+
+.main-content .hanging {
+    background: #232d48;
+}
+
+.main-content.active {
+    visibility: visible;
+}
+
+.main-content .hanging .logo-hanging {
+    height: 40px;
+}
+
+.main-content .hanging .logo-hanging {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+.main-content .hanging .logo-hanging {
+    background: #182137;
+}
+
+@media (max-width: 991px) {
+    .main-content .hanging .text-hanging {
+        height: -webkit-calc(100% - 40px);
+        height: -moz-calc(100% - 40px);
+        height: calc(100% - 40px);
+        top: 40px;
+    }
+}
+
 
 /* End Wrapper */
